@@ -4,13 +4,21 @@ import argparse
 from jetson_inference import imageNet
 from jetson_utils import videoSource, videoOutput, cudaFont, Log
 
-input = videoSource("/dev/video0", argv=sys.argv)
-output = videoOutput("", argv=sys.argv)
 font = cudaFont()
+parser = argparse.ArgumentParser()
+parser.add_argument("input", type=str, default="/dev/video0", nargs='?', help="URI of the input stream")
+parser.add_argument("output", type=str, default="", nargs='?', help="URI of the output stream")
+parser.add_argument("--network", type=str, default="models/fruitsv3/resnet18.onnx", help="path to the model to use")
+parser.add_argument("--labels", type=str, default="models/fruitsv3/labels.txt", help="path to the labels file")
+parser.add_argument("--input_blob", type=str, default="input_0", help="name of the input blob")
+parser.add_argument("--output_blob", type=str, default="output_0", help="name of the output blob")
+opt = parser.parse_args()
 
-net = imageNet(model="./resnet18.onnx", labels="./labels.txt",
-                input_blob="input_0", output_blob="output_0")
+# Load the custom network
+net = imageNet(model=opt.network, labels=opt.labels, input_blob=opt.input_blob, output_blob=opt.output_blob)
 
+input = videoSource(opt.input, argv=sys.argv)
+output = videoOutput(opt.output, argv=sys.argv)
 
 while True:
     # capture the next image

@@ -1,0 +1,14 @@
+apple
+banana
+cabbage
+carrot
+cherry
+cucumber
+eggplant
+grapes
+kiwi
+mango
+orange
+pear
+strawberry
+zucchini
