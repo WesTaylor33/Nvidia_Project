@@ -6,7 +6,22 @@ Fruit Classifier
 
 ## The Algorithm
 
-This uses a while loop to process each image, and within each image it is passed through a retrained version of the model that identifies which fruit or vegetable it is. 
+This uses a while loop to process each image, and within each image it is passed through a retrained version of the model that identifies which fruit or vegetable it is.
+Possible classes:
+- Apple
+- Banana
+- Cabbage
+- Carrot
+- Cherry
+- Cucumber
+- Eggplant
+- Grapes
+- Kiwi
+- Mango
+- Orange
+- Pear
+- Strawberry
+- Zucchini
 
 ## Running this project
 
