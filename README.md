@@ -1,16 +1,18 @@
-# Project Name
+Fruit Classifier
 
- Add short description of project here > 
+ This is a retrained model of resnet18 that can identify select fruits and vegetables. 
 
 ![add image descrition here](direct image link here)
 
 ## The Algorithm
 
-Add an explanation of the algorithm and how it works. Make sure to include details about how the code works, what it depends on, and any other relevant info. Add images or other descriptions for your project here. 
+This uses a while loop to process each image, and within each image it is passed through a retrained version of the model that identifies which fruit or vegetable it is. 
 
 ## Running this project
 
-1. Add steps for running this project.
-2. Make sure to include any required libraries that need to be installed for your project to run.
+1. Clone the project
+2. Install Jetson-Inference and Jetson-Util
+3. Cd into the project folder
+4. To run my program run: python3 classify.py /dev/video0 webrtc://@:8554/my_output
 
 [View a video explanation here](video link)
