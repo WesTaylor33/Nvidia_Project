@@ -29,6 +29,7 @@ Possible classes:
 Uses Imagenet and resnet18.
 
 <img width="429" alt="Screenshot 2025-03-29 at 8 39 00 PM" src="https://github.com/user-attachments/assets/04d53bd3-d1d8-4966-bb2c-68aa7cd81480" />
+
 When using live video feed, percentages will be displayed at the top as shown here.
 
 
