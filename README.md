@@ -25,6 +25,7 @@ Possible classes:
 - Zucchini
 
 <img width="1043" alt="Screenshot 2025-03-29 at 8 37 41 PM" src="https://github.com/user-attachments/assets/112c4fe6-bb55-4e7a-97d1-4f2d829f955c" />
+
 Uses Imagenet and resnet18.
 
 <img width="429" alt="Screenshot 2025-03-29 at 8 39 00 PM" src="https://github.com/user-attachments/assets/04d53bd3-d1d8-4966-bb2c-68aa7cd81480" />
